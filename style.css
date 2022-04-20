@@ -1,9 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
+
 body{
+  font-family: Roboto sans-serif;
+  padding: 0;
+  margin: 0;
+	/*width: 100%;
+	border: solid;*/
 
 }
-.photo{
-	border-radius: 50px 50px;
-	width: 200px;
-	height: 200px;
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background-color: antiquewhite;
+	/*width: 100%;
+	border: solid;*/
+	z-index: 100;
+}
+.info{
+	display: flex;
+	align-items: center;
+}
+.info img{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+}
+nav .info h2{
+	font-size: 15px;
+	margin-left: 10px;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin-left: 30px;
+	cursor: pointer;
+	border-bottom: white;
+}
+.container{
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+	margin-top: 10px;
+	max-width: 80%;
+	padding-top: 30px;
+}
+header h1{
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 6vw;
+}
+.container header p{
+	line-height: 30px;
+	color: #818181;
+
+}
+.informe{
+	border: 1px solid black;
+	background-color: antiquewhite;
+	height: 100%;
+	margin-top: 60px;
+
+}
+.infor h3{
+	margin: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	
+}
+.présent{
+		width: 100%;
+		height: 50%;
+	}
+	.présent img{
+		width: 96%;
+		height: 50%;
+		/*margin: 2%;*/
+		/*display: block;*/
+		margin: 0 2%;
+		transition: filter 0.5s;
+	}
+	.présent img:hover {
+		filter: brightness(50%);
+
+	}
+	.projets h1{
+		text-transform: uppercase;
+		font-family: Roboto sans-serif;
+		/*margin-left: 2%;*/
+		text-align: center;
+	}
+	.projet{
+		display: flex;
+		justify-content: space-between;
+		margin-left: 2%;
+		margin-right: 2%;
+		
+	}
+	.projete h4{
+        text-transform: uppercase;
+        font-family: 'Oswald' sans-serif;
+        font-size: 1.5em;
+        color: yellowgreen;
+	}
+	.description{
+		font-size: 15px;
+		line-height: 30px;
+		color: #818181;
+
+	}
+	.projete{
+		margin-right: 20px;
+	}
+	.date{
+		font-size: 17px;
+		color: #818181;
+	}
+@media screen and (max-width: 700px){
+	nav{
+		justify-content: center;
+	}
+	nav ul{
+		display: none;
+	}
+	header{
+		margin-top: 10px;
+		max-width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+	.informe{
+		display: none;
+		
+
+	}
+	.projet{
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	
+
 	
 }
