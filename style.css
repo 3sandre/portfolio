@@ -17,8 +17,6 @@ nav{
 	position: sticky;
 	top: 0;
 	background-color: antiquewhite;
-	/*width: 100%;
-	border: solid;*/
 	z-index: 100;
 }
 .info{
@@ -43,6 +41,9 @@ nav ul li{
 	cursor: pointer;
 	border-bottom: white;
 }
+nav ul a li:hover{
+	color: yellowgreen;
+}
 .container{
     margin: 2%;
     display: flex;
@@ -50,7 +51,7 @@ nav ul li{
 }
 header{
 	margin-top: 10px;
-	max-width: 80%;
+	max-width: 50%;
 	padding-top: 30px;
 }
 header h1{
@@ -58,6 +59,7 @@ header h1{
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-size: 6vw;
+	color: royalblue;
 }
 .container header p{
 	line-height: 30px;
@@ -84,8 +86,6 @@ header h1{
 	.présent img{
 		width: 96%;
 		height: 50%;
-		/*margin: 2%;*/
-		/*display: block;*/
 		margin: 0 2%;
 		transition: filter 0.5s;
 	}
@@ -96,21 +96,20 @@ header h1{
 	.projets h1{
 		text-transform: uppercase;
 		font-family: Roboto sans-serif;
-		/*margin-left: 2%;*/
 		text-align: center;
+		color: royalblue;
 	}
 	.projet{
 		display: flex;
 		justify-content: space-between;
 		margin-left: 2%;
-		margin-right: 2%;
 		
 	}
 	.projete h4{
         text-transform: uppercase;
         font-family: 'Oswald' sans-serif;
         font-size: 1.5em;
-        color: yellowgreen;
+        color: black;
 	}
 	.description{
 		font-size: 15px;
@@ -119,12 +118,77 @@ header h1{
 
 	}
 	.projete{
-		margin-right: 20px;
+		margin-right: 15px;
+	}
+	.projete img{s
+		margin-right: 2%;
+		height: 300px;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.projete p{
+		flex-wrap: wrap;
+		width: 100%;
 	}
 	.date{
 		font-size: 17px;
 		color: #818181;
+		margin-top: 20px;
 	}
+	.forme{
+		
+		padding-top: 10px;
+		margin-top: 3%;
+		background-color: #818181;
+
+	}
+	.forme div{
+		display: flex;
+		flex-direction: column;
+		max-width: 400px;
+		margin: 0px auto;
+	}
+	.forme h3{
+		text-transform: uppercase;
+		color: royalblue;
+		font-family: Roboto sans-serif;
+		font-size: 1.5em;
+
+	}
+	input{
+		height: 30px;
+		border-radius: 10px;
+		margin-top: 10px;
+		border: none;
+	}
+
+	textarea{
+		height: 140px;
+		border-radius: 10px;
+		margin-top: 10px;
+
+		
+	}
+	button{
+		height: 30px;
+		background-color: royalblue;
+		text-transform: uppercase;
+		width: max-content;
+		margin: auto;
+		margin-top: -2%;
+
+	}
+	footer h3{
+		text-align: center;
+		text-transform: uppercase;
+		color: royalblue;
+		font-family: Roboto sans-serif;
+		font-size: 1.5em;
+	}
+	footer{
+		
+	}
+	
 @media screen and (max-width: 700px){
 	nav{
 		justify-content: center;
@@ -145,8 +209,21 @@ header h1{
 	}
 	.projet{
 		flex-wrap: wrap;
-		text-align: center;
+		
+		
 	}
+	
+	.projete{
+		border: none;
+		background: none;
+		flex-wrap: wrap;
+	}
+	.projete img{
+		width: 100%;
+		margin-right: 4%;
+	}
+	
+
 	
 
 	
