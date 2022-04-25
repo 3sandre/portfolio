@@ -8,6 +8,7 @@ body{
 	border: solid;*/
 
 }
+/*================================BAR DE NAVIGATION==================================================*/
 nav{
 	display: flex;
 	flex-direction: row;
@@ -17,7 +18,7 @@ nav{
 	position: sticky;
 	top: 0;
 	background-color: antiquewhite;
-	z-index: 100;
+	z-index: 2;
 }
 .info{
 	display: flex;
@@ -44,6 +45,8 @@ nav ul li{
 nav ul a li:hover{
 	color: yellowgreen;
 }
+
+	/*================================HEADER==================================================*/
 .container{
     margin: 2%;
     display: flex;
@@ -60,11 +63,11 @@ header h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 6vw;
 	color: royalblue;
+	animation-direction: ltr;
+
 }
 .container header p{
 	line-height: 30px;
-	color: #818181;
-
 }
 .informe{
 	border: 1px solid black;
@@ -93,6 +96,8 @@ header h1{
 		filter: brightness(50%);
 
 	}
+
+	/*================================PROJET ==================================================*/
 	.projets h1{
 		text-transform: uppercase;
 		font-family: Roboto sans-serif;
@@ -113,18 +118,21 @@ header h1{
 	}
 	.description{
 		font-size: 15px;
-		line-height: 30px;
-		color: #818181;
+		line-height: 30px
 
 	}
 	.projete{
-		margin-right: 15px;
+		margin-right: 20px;
 	}
-	.projete img{s
-		margin-right: 2%;
+	.projete img{
+		margin-right: 10%;
 		height: 300px;
 		width: 100%;
 		flex-wrap: wrap;
+		border-radius: 10px;
+	}
+	.projete img:hover{
+		filter: brightness(70%);
 	}
 	.projete p{
 		flex-wrap: wrap;
@@ -135,6 +143,7 @@ header h1{
 		color: #818181;
 		margin-top: 20px;
 	}
+	/*================================FOOTER==================================================*/
 	.forme{
 		
 		padding-top: 10px;
@@ -157,14 +166,14 @@ header h1{
 	}
 	input{
 		height: 30px;
-		border-radius: 10px;
+		border-radius: 7px;
 		margin-top: 10px;
 		border: none;
 	}
 
 	textarea{
 		height: 140px;
-		border-radius: 10px;
+		border-radius: 7px;
 		margin-top: 10px;
 
 		
@@ -188,6 +197,52 @@ header h1{
 	footer{
 		
 	}
+	============================/*début pour le menu css projets*/=============================================
+	body{
+  font-family: Roboto sans-serif;
+  padding: 0;
+  margin: 0;
+	/*width: 100%;
+	border: solid;*/
+
+}
+/*================================BAR DE NAVIGATION==================================================*/
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background-color: antiquewhite;
+	z-index: 2;
+}
+.profil{
+	display: flex;
+	align-items: center;
+}
+.profil img{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+}
+nav .profil h2{
+	font-size: 15px;
+	margin-left: 10px;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin-left: 30px;
+	cursor: pointer;
+	border-bottom: white;
+}
+nav ul a li:hover{
+	color: yellowgreen;
+}
 	
 @media screen and (max-width: 700px){
 	nav{
@@ -223,6 +278,9 @@ header h1{
 		margin-right: 4%;
 	}
 	
+
+
+
 
 	
 
