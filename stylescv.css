@@ -59,6 +59,64 @@ input{
 nav ul a{
 	text-decoration: none;
 }
+/*================================FOOTER==================================================*/
+	.forme{
+		
+		padding-top: 10px;
+		margin-top: 3%;
+		background-color: #818181;
+
+	}
+	.forme div{
+		display: flex;
+		flex-direction: column;
+		max-width: 400px;
+		margin: 0px auto;
+	}
+	.forme h3{
+		text-transform: uppercase;
+		color: royalblue;
+		font-family: Roboto sans-serif;
+		font-size: 1.5em;
+
+	}
+	.forme div input{
+		height: 30px;
+		border-radius: 7px;
+		margin-top: 10px;
+		border: none;
+		display: block;
+	}
+
+	textarea{
+		height: 140px;
+		border-radius: 7px;
+		margin-top: 10px;
+
+		
+	}
+	button{
+		height: 30px;
+		background-color: royalblue;
+		text-transform: uppercase;
+		width: max-content;
+		margin: auto;
+		margin-top: -2%;
+		outline: 0;
+		cursor: pointer;
+
+	}
+	footer h3{
+		text-align: center;
+		text-transform: uppercase;
+		color: royalblue;
+		font-family: Roboto sans-serif;
+		font-size: 1.5em;
+	}
+	footer{
+		
+	}
+
 
 @media screen and (max-width: 700px){
 	#check{
