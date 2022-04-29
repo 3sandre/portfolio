@@ -290,4 +290,13 @@ ul a{
 	input{
 		display: block;
 	}
+	.forme div input{
+	outline: 0;
+}
+textarea{
+	outline: 0;
+}
+button{
+	outline: 0;
+}
 }
