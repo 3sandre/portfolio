@@ -242,20 +242,17 @@ ul{
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	top: 40px;
+	top: 30px;
 
 }
 .checkbtn{
 	display: block;
     position: absolute;
-    top: 30%;
+    top: 0%;
     cursor: pointer;
 }
 
-.put{
-	margin-bottom: 0px;
-	
-}
+
 ul a{
 	padding: 5px 10px;
 	margin: 10px auto;
