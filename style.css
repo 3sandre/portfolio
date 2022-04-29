@@ -186,12 +186,14 @@ header h1{
 		margin-top: 10px;
 		border: none;
 		display: block;
+		outline: 0;
 	}
 
 	textarea{
 		height: 140px;
 		border-radius: 7px;
 		margin-top: 10px;
+		outline: 0;
 
 		
 	}
