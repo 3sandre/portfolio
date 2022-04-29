@@ -59,6 +59,39 @@ input{
 nav ul a{
 	text-decoration: none;
 }
+.début{
+	margin-left: 15px;
+}
+.début h1{
+	text-transform: capitalize;
+	font-size: 4em;
+	margin-top: 0;
+}
+.début p{
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-family: "Oswlad" sans-serif;
+	font-size: 15px;
+}
+.princip{
+	background: center center/cover url(images/photo.jpg) no-repeat;
+  width: 100%;
+
+
+}
+.compétant{
+	display: flex;
+	justify-content: space-between;
+	font-family: "Roboto" sans-serif;
+	font-size: 1.5em;
+	margin-left: 15px;
+
+}
+.édu{
+	padding: 0;
+	border-radius: 10px;
+	text-decoration: underline blink;
+}
 /*================================FOOTER==================================================*/
 	.forme{
 		
