@@ -153,4 +153,13 @@ ul a{
 	padding: 5px 10px;
 	margin: 10px auto;
 }
+.forme div input{
+	outline: 0;
+}
+textarea{
+	outline: 0;
+}
+button{
+	outline: 0;
+}
 }

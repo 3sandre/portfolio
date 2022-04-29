@@ -180,4 +180,13 @@ header .tof img{
 .para{
 	font-size: 15px;
 }
+.forme div input{
+	outline: 0;
+}
+textarea{
+	outline: 0;
+}
+button{
+	outline: 0;
+}
 }
