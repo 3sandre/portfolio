@@ -4,8 +4,7 @@ body{
   font-family: Roboto sans-serif;
   padding: 0;
   margin: 0;
-	/*width: 100%;
-	border: solid;*/
+  width: 100%;
 
 }
 /*================================BAR DE NAVIGATION==================================================*/
@@ -19,6 +18,7 @@ nav{
 	top: 0;
 	background-color: antiquewhite;
 	z-index: 2;
+	width: 100vw;
 }
 .info{
 	display: flex;
@@ -45,8 +45,24 @@ nav ul li{
 nav ul a li:hover{
 	color: yellowgreen;
 }
+.checkbtn{
+	display: none;
+}
+input{
+	display: none;
+}
+#check{
+	display: none;
+}
+.put{
+	position: relative;
+}
+nav ul a{
+	text-decoration: none;
+}
 
 	/*================================HEADER==================================================*/
+
 .container{
     margin: 2%;
     display: flex;
@@ -62,7 +78,7 @@ header h1{
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-size: 6vw;
-	color: royalblue;
+	color: black;
 	animation-direction: ltr;
 
 }
@@ -125,7 +141,7 @@ header h1{
 		margin-right: 20px;
 	}
 	.projete img{
-		margin-right: 10%;
+		/*margin-right: 10%;*/
 		height: 300px;
 		width: 100%;
 		flex-wrap: wrap;
@@ -164,11 +180,12 @@ header h1{
 		font-size: 1.5em;
 
 	}
-	input{
+	.forme div input{
 		height: 30px;
 		border-radius: 7px;
 		margin-top: 10px;
 		border: none;
+		display: block;
 	}
 
 	textarea{
@@ -185,6 +202,8 @@ header h1{
 		width: max-content;
 		margin: auto;
 		margin-top: -2%;
+		outline: 0;
+		cursor: pointer;
 
 	}
 	footer h3{
@@ -197,60 +216,48 @@ header h1{
 	footer{
 		
 	}
-	============================/*début pour le menu css projets*/=============================================
-	body{
-  font-family: Roboto sans-serif;
-  padding: 0;
-  margin: 0;
-	/*width: 100%;
-	border: solid;*/
 
-}
-/*================================BAR DE NAVIGATION==================================================*/
-nav{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	position: sticky;
-	top: 0;
-	background-color: antiquewhite;
-	z-index: 2;
-}
-.profil{
-	display: flex;
-	align-items: center;
-}
-.profil img{
-     width: 60px;
-     height: 60px;
-     border-radius: 50%;
-}
-nav .profil h2{
-	font-size: 15px;
-	margin-left: 10px;
-}
-ul{
-	display: flex;
-	list-style: none;
-}
-nav ul li{
-	margin-left: 30px;
-	cursor: pointer;
-	border-bottom: white;
-}
-nav ul a li:hover{
-	color: yellowgreen;
-}
 	
 @media screen and (max-width: 700px){
-	nav{
-		justify-content: center;
-	}
-	nav ul{
-		display: none;
-	}
+	
+#check{
+	display: block;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#check:checked~ul{
+	display: grid;
+}
+ul{
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #818181;
+	width: 40vw;
+	height: 160px;
+	align-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	top: 40px;
+
+}
+.checkbtn{
+	display: block;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+}
+
+.put{
+	margin-bottom: 0px;
+	
+}
+ul a{
+	padding: 5px 10px;
+	margin: 10px auto;
+}
 	header{
 		margin-top: 10px;
 		max-width: 100%;
@@ -278,11 +285,7 @@ nav ul a li:hover{
 		margin-right: 4%;
 	}
 	
-
-
-
-
-	
-
-	
+	input{
+		display: block;
+	}
 }

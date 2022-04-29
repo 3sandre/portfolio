@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
 body{
   font-family: Roboto sans-serif;
   padding: 0;
@@ -16,7 +17,7 @@ nav{
 	top: 0;
 	background-color: antiquewhite;
 	z-index: 2;
-	width: 100%;
+	width: 100vw;
 }
 .profil{
 	display: flex;
@@ -42,4 +43,81 @@ nav ul li{
 }
 nav ul a li:hover{
 	color: yellowgreen;
+}
+.checkbtn{
+	display: none;
+}
+input{
+	display: none;
+}
+#check{
+	display: none;
+}
+.put{
+	position: relative;
+}
+nav ul a{
+	text-decoration: none;
+}
+ /*style header*/
+
+ .intro{
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-decoration: underline;
+
+ }
+ .tof img{
+ 	border-radius: 40%;
+ 	height: 300px;
+ 	margin-left: 10px;
+ 	margin-top: 20px;
+ }
+ header{
+ 	display: flex;
+ }
+ .para{
+ 	float: right;
+ 	font-size: 35px;
+ 	margin-left: 20px;
+ }
+@media screen and (max-width: 700px){
+#check{
+	display: block;
+	opacity: 0;
+}
+
+#check:checked~ul{
+	display: grid;
+}
+ul{
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #818181;
+	width: 40vw;
+	height: 160px;
+	align-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	top: 60px;
+
+}
+.checkbtn{
+	display: block;
+}
+.put{
+	margin-bottom: 20px;
+}
+ul a{
+	padding: 5px 10px;
+	margin: 10px auto;
+}
+header .tof img{
+	display: none;
+}
+.para{
+	font-size: 15px;
+}
 }
