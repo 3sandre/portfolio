@@ -16,7 +16,7 @@ nav{
 	align-items: center;
 	position: sticky;
 	top: 0;
-	background-color: antiquewhite;
+	background-color: white;
 	z-index: 2;
 	width: 100vw;
 }
@@ -153,6 +153,7 @@ header h1{
 	.projete p{
 		flex-wrap: wrap;
 		width: 100%;
+		font-size: 1.5em;
 	}
 	.date{
 		font-size: 17px;

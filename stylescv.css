@@ -15,7 +15,7 @@ nav{
 	align-items: center;
 	position: sticky;
 	top: 0;
-	background-color: antiquewhite;
+	background-color: white;
 	z-index: 2;
 	width: 100vw;
 }
@@ -73,25 +73,114 @@ nav ul a{
 	font-family: "Oswlad" sans-serif;
 	font-size: 15px;
 }
-.princip{
+/*.princip{
 	background: center center/cover url(images/photo.jpg) no-repeat;
   width: 100%;
 
 
-}
+}*/
 .compétant{
 	display: flex;
 	justify-content: space-between;
 	font-family: "Roboto" sans-serif;
 	font-size: 1.5em;
 	margin-left: 15px;
-
+	flex-wrap: wrap;
 }
 .édu{
 	padding: 0;
-	border-radius: 10px;
-	text-decoration: underline blink;
+	position: relative;
+	top: 50%;
+	text-align: center;
+	display: block;
+
+	
+
 }
+.skills{
+	position: relative;
+	/*display: inline-block;*/
+	width: 10rem;
+	height: 10rem;
+	margin: 1.5rem;
+	border: 1.2rem solid royalblue;
+	/*text-align: center;*/
+	border-radius: 9rem;
+	box-shadow: 0 0 7px black;
+	border-bottom-color: white;
+	border-top-color: white;
+	border-right-color: white;
+	box-sizing: border-box;
+}
+.skills:nth-child(2){
+	border-right-color: royalblue;
+	border-bottom-color: white;
+	border-top-color: royalblue;
+	border-left-color: royalblue;
+}
+.skills:nth-child(3){
+	border-right-color: royalblue;
+	border-bottom-color: white;
+	border-top-color: royalblue;
+	border-left-color: royalblue;
+}
+.skills:nth-child(4){
+	border-right-color: white;
+	border-bottom-color: white;
+	border-top-color: royalblue;
+	border-left-color: royalblue;
+}
+.value{
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 40px;
+	font-size: 2.4rem;
+}
+.label{
+  position: relative;
+  left: 150px;
+  text-transform: uppercase;
+  color: blue;
+}
+.pro{
+	width: 10rem;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 9rem;
+	position: relative;
+	overflow: hidden;
+	margin: 1.5rem;
+	display: grid;
+	align-items: center;
+
+}
+.pro::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: conic-gradient(blue calc(var(--value) * 1%), skyblue 0);
+	mask: radial-gradient(white 55%, transparent 0);
+	mask-type: alpha;
+	-webkit-mask: radial-gradient(#0000 55%, #000 0);
+	-webkit-mask-type: alpha;
+
+}
+.pro::after{
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+	font-family: Helvetica, Arial, sans-serif;
+
+
+}
+.kill{
+	display: flex;
+}
+
+
 /*================================FOOTER==================================================*/
 	.forme{
 		
@@ -195,4 +284,43 @@ textarea{
 button{
 	outline: 0;
 }
+.skills{
+	position: relative;
+	/*display: inline-block;*/
+	width: 6rem;
+	height: 6rem;
+	margin: auto;
+	border: 1.2rem solid royalblue;
+	/*text-align: center;*/
+	border-radius: 9rem;
+	box-shadow: 0 0 7px black;
+	border-bottom-color: white;
+	border-top-color: white;
+	border-right-color: white;
+	box-sizing: border-box;
+}
+.value{
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 10px;
+	font-size: 1.5rem;
+}
+.label{
+  position: relative;
+  left: 100px;
+  text-transform: uppercase;
+  color: blue;
+}
+.pro{
+	width: 6rem;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 9rem;
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+	/*left: 20px;*/
+}
+
 }
