@@ -6,6 +6,7 @@ body{
 	width: 100%;
 
 }
+
 /*================================BAR DE NAVIGATION==================================================*/
 nav{
 	display: flex;
@@ -59,6 +60,7 @@ input{
 nav ul a{
 	text-decoration: none;
 }
+/*==========================bref intro=========================*/
 .début{
 	margin-left: 15px;
 }
@@ -73,76 +75,84 @@ nav ul a{
 	font-family: "Oswlad" sans-serif;
 	font-size: 15px;
 }
-/*.princip{
-	background: center center/cover url(images/photo.jpg) no-repeat;
-  width: 100%;
-
-
-}*/
+/*===========================Compétence===============================*/
 .compétant{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-family: "Roboto" sans-serif;
 	font-size: 1.5em;
-	margin-left: 15px;
+	margin-left: 30px;
 	flex-wrap: wrap;
 }
+.compétant h2{
+  text-align: center;
+}
+.skill{
+	margin: 5px auto;
+}
+h3{
+	bottom: 400px;
+	color: #818181;
+}
+/*===============================techniques======================*/
+.édul{
+	padding: 0;
+	position: relative;
+	top: 50%;
+	text-align: center;
+	display: block;
+	margin-left: 4%;
+}
+.éduc{
+	display: flex;
+	align-items: center;
+}
+.educ{
+	width: 10rem;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 9rem;
+	position: relative;
+	overflow: hidden;
+	margin: 1.5rem;
+	display: grid;
+	align-items: center;
+
+}
+
+.educ::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: conic-gradient(royalblue calc(var(--value) * 1%), skyblue 0);
+	mask: radial-gradient(white 55%, transparent 0);
+	mask-type: alpha;
+	-webkit-mask: radial-gradient(#0000 55%, #000 0);
+	-webkit-mask-type: alpha;
+}
+
+.educ::after{
+	counter-reset: percentage var(--value);
+	content: counter(percentage) '%';
+	font-family: Helvetica, Arial, sans-serif;
+
+
+}
+/*=================================professionnelles====================*/
+
 .édu{
 	padding: 0;
 	position: relative;
 	top: 50%;
 	text-align: center;
 	display: block;
+  margin-right: 4%;
 
-	
+}
 
-}
-.skills{
-	position: relative;
-	/*display: inline-block;*/
-	width: 10rem;
-	height: 10rem;
-	margin: 1.5rem;
-	border: 1.2rem solid royalblue;
-	/*text-align: center;*/
-	border-radius: 9rem;
-	box-shadow: 0 0 7px black;
-	border-bottom-color: white;
-	border-top-color: white;
-	border-right-color: white;
-	box-sizing: border-box;
-}
-.skills:nth-child(2){
-	border-right-color: royalblue;
-	border-bottom-color: white;
-	border-top-color: royalblue;
-	border-left-color: royalblue;
-}
-.skills:nth-child(3){
-	border-right-color: royalblue;
-	border-bottom-color: white;
-	border-top-color: royalblue;
-	border-left-color: royalblue;
-}
-.skills:nth-child(4){
-	border-right-color: white;
-	border-bottom-color: white;
-	border-top-color: royalblue;
-	border-left-color: royalblue;
-}
-.value{
-	position: relative;
-	left: 0;
-	right: 0;
-	top: 40px;
-	font-size: 2.4rem;
-}
-.label{
-  position: relative;
-  left: 150px;
-  text-transform: uppercase;
-  color: blue;
-}
 .pro{
 	width: 10rem;
 	aspect-ratio: 1;
@@ -155,6 +165,7 @@ nav ul a{
 	align-items: center;
 
 }
+
 .pro::before {
 	content: "";
 	position: absolute;
@@ -162,13 +173,14 @@ nav ul a{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: conic-gradient(blue calc(var(--value) * 1%), skyblue 0);
+	background: conic-gradient(royalblue calc(var(--value) * 1%), skyblue 0);
 	mask: radial-gradient(white 55%, transparent 0);
 	mask-type: alpha;
 	-webkit-mask: radial-gradient(#0000 55%, #000 0);
 	-webkit-mask-type: alpha;
 
 }
+
 .pro::after{
 	counter-reset: percentage var(--value);
 	content: counter(percentage) '%';
@@ -176,8 +188,10 @@ nav ul a{
 
 
 }
+
 .kill{
 	display: flex;
+	align-items: center;
 }
 
 
@@ -240,8 +254,7 @@ nav ul a{
 	footer{
 		
 	}
-
-
+/*=========================responsive=================*/
 @media screen and (max-width: 700px){
 	#check{
 	display: block;
@@ -284,21 +297,13 @@ textarea{
 button{
 	outline: 0;
 }
-.skills{
-	position: relative;
-	/*display: inline-block;*/
-	width: 6rem;
-	height: 6rem;
-	margin: auto;
-	border: 1.2rem solid royalblue;
-	/*text-align: center;*/
-	border-radius: 9rem;
-	box-shadow: 0 0 7px black;
-	border-bottom-color: white;
-	border-top-color: white;
-	border-right-color: white;
-	box-sizing: border-box;
+.début h1{
+	font-size: 1.5em;
 }
+.début p{
+	font-size: 5px;
+}
+
 .value{
 	position: relative;
 	left: 0;
@@ -313,14 +318,52 @@ button{
   color: blue;
 }
 .pro{
-	width: 6rem;
+	width: 4rem;
 	aspect-ratio: 1;
 	background: white;
 	border-radius: 9rem;
-	position: relative;
 	overflow: hidden;
+	text-align: center;
+	align-items: center;
+}
+.educ{
+	width: 4rem;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 9rem;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+}
+.compétant{
+	font-size: 0.5em;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+}
+.compétant h2{
+	font-size: 2em;
 	margin: auto;
-	/*left: 20px;*/
+	margin-bottom: 30px;
+	text-align: center;
+}
+.éduc{
+	display: flex;
+	justify-items: left;
+}
+
+.skill{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 60%;
+	margin-bottom: 230px;
+
+
+}
+
+.édu .skill{
+	margin-right: 15%;
 }
 
 }
