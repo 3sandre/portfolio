@@ -152,11 +152,11 @@ header h1{
 	}
 	.projete p{
 		flex-wrap: wrap;
-		width: 100%;
-		font-size: 1.5em;
+		font-size: 1em;
+		line-height: 30px;
 	}
 	.date{
-		font-size: 17px;
+		font-size: 15px;
 		color: #818181;
 		margin-top: 20px;
 	}
@@ -207,6 +207,7 @@ header h1{
 		margin-top: -2%;
 		outline: 0;
 		cursor: pointer;
+		color: white;
 
 	}
 	footer h3{
@@ -297,4 +298,30 @@ textarea{
 button{
 	outline: 0;
 }
+.forme div input{
+		height: 30px;
+		border-radius: 7px;
+		margin-top: 10px;
+		margin-bottom: 4px;
+		border: none;
+		display: block;
+		outline: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	textarea{
+		height: 140px;
+		border-radius: 7px;
+		margin-top: 10px;
+		outline: 0;
+ 		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.forme div{
+		display: flex;
+		flex-direction: column;
+		max-width: 300px;
+		margin: 0px auto;
+	}
 }

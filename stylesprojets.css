@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
+
 body{
   font-family: Roboto sans-serif;
   padding: 0;
@@ -68,19 +69,76 @@ nav ul a{
 
  }
  .tof img{
- 	border-radius: 40%;
+ 	/*border-radius: 40%;
  	height: 300px;
  	margin-left: 10px;
- 	margin-top: 20px;
+ 	margin-top: 20px;*/
+ 	border-radius: 40%;
+	margin: 40px;
+	height: 300px;
+	max-width: 300px;
  }
  header{
  	display: flex;
  }
  .para{
  	float: right;
- 	font-size: 35px;
  	margin-left: 20px;
  }
+ .para p{
+ 	line-height: 30px;
+ 	margin-top: 50px;
+ }
+ fieldset{
+ 		margin: 10px;
+ }
+#folio p{
+	line-height: 30px;
+	margin-top: 50px;
+}
+#folio{
+	display: flex;
+	margin: 10px;
+}
+#folio img{
+	border-radius: 40%;
+	margin: 40px;
+	height: 300px;
+	max-width: 300px;
+}
+#job p{
+	line-height: 30px;
+	margin-top: 50px;
+}
+#job{
+	display: flex;
+	margin: 10px;
+}
+#job img{
+	border-radius: 40%;
+	margin: 40px;
+	height: 300px;
+	max-width: 300px;
+}
+#autre p{
+	line-height: 30px;
+	margin-top: 50px;
+}
+#autre{
+	display: flex;
+	margin: 10px;
+}
+#autre img{
+	border-radius: 40%;
+	margin: 40px;
+	height: 300px;
+	max-width: 300px;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
+}
  /*================================FOOTER==================================================*/
 	.forme{
 		
@@ -95,13 +153,7 @@ nav ul a{
 		max-width: 400px;
 		margin: 0px auto;
 	}
-	.forme h3{
-		text-transform: uppercase;
-		color: royalblue;
-		font-family: Roboto sans-serif;
-		font-size: 1.5em;
-
-	}
+	
 	.forme div input{
 		height: 30px;
 		border-radius: 7px;
@@ -142,6 +194,9 @@ nav ul a{
 	}
 
 @media screen and (max-width: 700px){
+	body{
+		background: transparent;
+	}
 #check{
 	display: block;
 	opacity: 0;
@@ -180,6 +235,12 @@ header .tof img{
 .para{
 	font-size: 15px;
 }
+.forme div{
+		display: flex;
+		flex-direction: column;
+		max-width: 300px;
+		margin: 0px auto;
+	}
 .forme div input{
 	outline: 0;
 }
@@ -188,5 +249,14 @@ textarea{
 }
 button{
 	outline: 0;
+}
+#folio img{
+	display: none;
+}
+#job img{
+	display: none;
+}
+#autre img{
+	display: none;
 }
 }
