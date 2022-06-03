@@ -70,7 +70,6 @@ nav ul a{
 	margin-top: 0;
 }
 .début p{
-	text-transform: uppercase;
 	margin-top: 10px;
 	font-family: "Oswlad" sans-serif;
 	font-size: 15px;
@@ -194,7 +193,15 @@ h3{
 	align-items: center;
 }
 
-
+.expérience #job ol li{
+	display: flex;
+	line-height: 30px;
+	justify-content: center;
+}
+h2{
+	font-size: 40px;
+	text-align: center;
+}
 /*================================FOOTER==================================================*/
 	.forme{
 		
@@ -301,7 +308,7 @@ button{
 	font-size: 1.5em;
 }
 .début p{
-	font-size: 5px;
+	
 }
 
 .value{
@@ -365,5 +372,18 @@ button{
 .édu .skill{
 	margin-right: 15%;
 }
+.forme div{
+		display: flex;
+		flex-direction: column;
+		max-width: 300px;
+		margin: 0px auto;
+	}
+	button{
+		color: white;
+	}
+	.expérience ul li{
+		display: flex;
+		flex-direction: column;
+	}
 
 }

@@ -249,6 +249,7 @@ textarea{
 }
 button{
 	outline: 0;
+	color: white;
 }
 #folio img{
 	display: none;
